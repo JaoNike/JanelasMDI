@@ -15,7 +15,6 @@ namespace JanelasMDI
         public Frm_Principal(string tipo,string nome_usu)
         {
             InitializeComponent();
-            lblUsuario.Text = nome_usu;
             usuarioMenuItem.Text = nome_usu;
             if (tipo == "root")
             {
@@ -184,6 +183,19 @@ namespace JanelasMDI
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+
+        }
+
+        private void exibirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (toolStrip1.Visible == false)
+            {
+                toolStrip1.Visible = true;
+            }
+            else
+            {
+                toolStrip1.Visible=false;
+            }
 
         }
     }

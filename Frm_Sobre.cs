@@ -19,7 +19,21 @@ namespace JanelasMDI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             this.Close();
+        }
+
+        private void Frm_Sobre_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Left)
+            {
+                
+            }
         }
     }
 }

@@ -63,6 +63,16 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Free_Dark_Wallpaper_HD_Background {
+            get {
+                object obj = ResourceManager.GetObject("Free-Dark-Wallpaper-HD-Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fundo {
             get {
                 object obj = ResourceManager.GetObject("fundo", resourceCulture);
@@ -136,6 +146,16 @@ namespace JanelasMDI.Properties {
         internal static System.Drawing.Bitmap FundoQuaseBranco {
             get {
                 object obj = ResourceManager.GetObject("FundoQuaseBranco", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GitFundo {
+            get {
+                object obj = ResourceManager.GetObject("GitFundo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

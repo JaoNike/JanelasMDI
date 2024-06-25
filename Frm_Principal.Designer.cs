@@ -81,11 +81,11 @@
             this.janelaToolStripMenuItem,
             this.ajudaToolStripMenuItem,
             this.usuarioMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(1, 0);
             this.menuStrip1.MdiWindowListItem = this.janelaToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(804, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -126,6 +126,7 @@
             this.exibirToolStripMenuItem.Name = "exibirToolStripMenuItem";
             this.exibirToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.exibirToolStripMenuItem.Text = "Exibir";
+            this.exibirToolStripMenuItem.Click += new System.EventHandler(this.exibirToolStripMenuItem_Click);
             // 
             // ferramentasMenuItem
             // 
@@ -141,14 +142,14 @@
             // CadastrarUsuarioToolStripMenuItem
             // 
             this.CadastrarUsuarioToolStripMenuItem.Name = "CadastrarUsuarioToolStripMenuItem";
-            this.CadastrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.CadastrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CadastrarUsuarioToolStripMenuItem.Text = "Cadastrar Usuário";
             this.CadastrarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.CadastrarUsuarioToolStripMenuItem_Click);
             // 
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.calculadoraToolStripMenuItem.Text = "Visualizar Usuário";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
@@ -181,6 +182,7 @@
             // listarClientesToolStripMenuItem
             // 
             this.listarClientesToolStripMenuItem.Name = "listarClientesToolStripMenuItem";
+            this.listarClientesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
             this.listarClientesToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.listarClientesToolStripMenuItem.Text = "Listar Clientes";
             this.listarClientesToolStripMenuItem.Click += new System.EventHandler(this.listarClientesToolStripMenuItem_Click);
@@ -201,7 +203,7 @@
             // cadastrarAnimalToolStripMenuItem
             // 
             this.cadastrarAnimalToolStripMenuItem.Name = "cadastrarAnimalToolStripMenuItem";
-            this.cadastrarAnimalToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D2)));
+            this.cadastrarAnimalToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D4)));
             this.cadastrarAnimalToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.cadastrarAnimalToolStripMenuItem.Text = "Cadastrar Aluno";
             this.cadastrarAnimalToolStripMenuItem.Click += new System.EventHandler(this.cadastrarAnimalToolStripMenuItem_Click);
@@ -209,6 +211,7 @@
             // buscarAlunoToolStripMenuItem
             // 
             this.buscarAlunoToolStripMenuItem.Name = "buscarAlunoToolStripMenuItem";
+            this.buscarAlunoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D5)));
             this.buscarAlunoToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.buscarAlunoToolStripMenuItem.Text = "Buscar Aluno";
             this.buscarAlunoToolStripMenuItem.Click += new System.EventHandler(this.buscarAlunoToolStripMenuItem_Click);
@@ -216,6 +219,7 @@
             // agendarConsultaToolStripMenuItem
             // 
             this.agendarConsultaToolStripMenuItem.Name = "agendarConsultaToolStripMenuItem";
+            this.agendarConsultaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D6)));
             this.agendarConsultaToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.agendarConsultaToolStripMenuItem.Text = "Listar Alunos";
             this.agendarConsultaToolStripMenuItem.Click += new System.EventHandler(this.agendarConsultaToolStripMenuItem_Click);
@@ -338,13 +342,15 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCadastroDeClient,
             this.tsbCadastrarAluno,
             this.tsbSobre});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Location = new System.Drawing.Point(1, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(800, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.Size = new System.Drawing.Size(804, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -354,6 +360,7 @@
             this.tsbCadastroDeClient.Image = global::JanelasMDI.Properties.Resources.icons8_adicionar_usuário_masculino_96;
             this.tsbCadastroDeClient.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCadastroDeClient.Name = "tsbCadastroDeClient";
+            this.tsbCadastroDeClient.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
             this.tsbCadastroDeClient.Size = new System.Drawing.Size(23, 22);
             this.tsbCadastroDeClient.Text = "Cadastrar novo cliente";
             this.tsbCadastroDeClient.Click += new System.EventHandler(this.toolStripButton1_Click_1);
@@ -364,6 +371,7 @@
             this.tsbCadastrarAluno.Image = global::JanelasMDI.Properties.Resources.icons8_adicionar_usuário_masculino_40;
             this.tsbCadastrarAluno.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbCadastrarAluno.Name = "tsbCadastrarAluno";
+            this.tsbCadastrarAluno.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
             this.tsbCadastrarAluno.Size = new System.Drawing.Size(23, 22);
             this.tsbCadastrarAluno.Text = "Cadastrar Alunos";
             this.tsbCadastrarAluno.Click += new System.EventHandler(this.tsbCadastrarAluno_Click);
@@ -383,11 +391,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 450);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.Name = "Frm_Principal";
+            this.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Atendimento";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

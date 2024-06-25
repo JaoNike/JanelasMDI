@@ -289,5 +289,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-recarregar-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GitFundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Free-Dark-Wallpaper-HD-Background.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -17,27 +17,12 @@ namespace JanelasMDI
             InitializeComponent();
         }
 
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtBoxCPF_TextChanged(object sender, EventArgs e)
+        private void Frm_BuscarAluno_Load(object sender, EventArgs e)
         {
 
         }
