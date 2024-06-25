@@ -1,0 +1,34 @@
+* [33mc3ff143[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Atulizacao 0.0.4
+[31m|[m * [33ma586cf8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Atulizacao 0.0.3
+[31m|[m[31m/[m  
+* [33mc6ee6f0[m Alt
+*   [33m3b9de9c[m Merge branch 'master' of https://github.com/JaoNike/JanelasMDI
+[33m|[m[34m\[m  
+[33m|[m * [33mca83227[m 17h11
+* [34m|[m [33m44d1590[m 17h24
+[34m|[m[34m/[m  
+* [33m69b9727[m 16h27
+*   [33ma278a29[m Merge branch 'master' of https://github.com/JaoNike/JanelasMDI
+[35m|[m[36m\[m  
+[35m|[m * [33m28074d2[m 14h29
+* [36m|[m [33mf3ea10c[m 15h49
+[36m|[m[36m/[m  
+*   [33m24b308d[m Merge branch 'master' of https://github.com/JaoNike/JanelasMDI
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m41b4ab2[m Atualização
+* [1;32m|[m [33meb51584[m Atualização
+[1;32m|[m[1;32m/[m  
+*   [33m6067285[m Merge branch 'master' of https://github.com/JaoNike/JanelasMDI
+[1;33m|[m[1;34m\[m  
+[1;33m|[m *   [33m189a22d[m Merge pull request #1 from JaoNike/Referencias_Atualizadas
+[1;33m|[m [1;35m|[m[1;36m\[m  
+* [1;35m|[m [1;36m\[m   [33me4016e3[m Teste
+[1;35m|[m[1;36m\[m [1;35m\[m [1;36m\[m  
+[1;35m|[m [1;36m|[m[1;35m/[m [1;36m/[m  
+[1;35m|[m[1;35m/[m[1;36m|[m [1;36m/[m   
+[1;35m|[m [1;36m|[m[1;36m/[m    
+[1;35m|[m * [33m2d76275[m #Atualizei as referencias, podem causar erro em outros computadores desatualizado. Atualizando
+* [32m|[m [33m3b9fd2d[m Atualizando
+[32m|[m[32m/[m  
+* [33ma8d2e22[m Adicionar arquivos de projeto.
+* [33m3dea2ba[m Adicione .gitattributes e .gitignore.
