@@ -42,7 +42,7 @@
             this.dgv.Location = new System.Drawing.Point(21, 132);
             this.dgv.Name = "dgv";
             this.dgv.ReadOnly = true;
-            this.dgv.Size = new System.Drawing.Size(637, 299);
+            this.dgv.Size = new System.Drawing.Size(637, 312);
             this.dgv.TabIndex = 0;
             // 
             // label1
@@ -62,9 +62,9 @@
             this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.BackgroundImage = global::JanelasMDI.Properties.Resources.icons8_recarregar_50;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(604, 75);
+            this.button1.Location = new System.Drawing.Point(604, 71);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 51);
+            this.button1.Size = new System.Drawing.Size(54, 55);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
