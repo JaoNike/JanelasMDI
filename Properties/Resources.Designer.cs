@@ -63,6 +63,16 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Foto_joao {
+            get {
+                object obj = ResourceManager.GetObject("Foto_joao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Free_Dark_Wallpaper_HD_Background {
             get {
                 object obj = ResourceManager.GetObject("Free-Dark-Wallpaper-HD-Background", resourceCulture);
@@ -163,6 +173,16 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Githublink {
+            get {
+                object obj = ResourceManager.GetObject("Githublink", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_adicionar_usuário_masculino_40 {
             get {
                 object obj = ResourceManager.GetObject("icons8-adicionar-usuário-masculino-40", resourceCulture);
@@ -253,6 +273,26 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap me_Sobre {
+            get {
+                object obj = ResourceManager.GetObject("me_Sobre", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap me_Sobre1 {
+            get {
+                object obj = ResourceManager.GetObject("me_Sobre1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Retangulo {
             get {
                 object obj = ResourceManager.GetObject("Retangulo", resourceCulture);
@@ -286,6 +326,16 @@ namespace JanelasMDI.Properties {
         internal static System.Drawing.Bitmap Teste1 {
             get {
                 object obj = ResourceManager.GetObject("Teste1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_logo_svg {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_logo.svg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
