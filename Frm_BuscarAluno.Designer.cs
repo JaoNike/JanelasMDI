@@ -36,9 +36,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtBoxCPF = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBoxNomeDoCli = new System.Windows.Forms.TextBox();
             this.txtboxgenero = new System.Windows.Forms.TextBox();
-            this.txtboxtelefone = new System.Windows.Forms.TextBox();
+            this.txtboxTelefoneCli = new System.Windows.Forms.TextBox();
             this.txtBoxCPFcliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -70,9 +70,9 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtBoxCPF);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txtBoxNomeDoCli);
             this.panel1.Controls.Add(this.txtboxgenero);
-            this.panel1.Controls.Add(this.txtboxtelefone);
+            this.panel1.Controls.Add(this.txtboxTelefoneCli);
             this.panel1.Controls.Add(this.txtBoxCPFcliente);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label9);
@@ -170,15 +170,15 @@
             this.txtBoxCPF.Size = new System.Drawing.Size(142, 21);
             this.txtBoxCPF.TabIndex = 170;
             // 
-            // textBox3
+            // txtBoxNomeDoCli
             // 
-            this.textBox3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(13, 161);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(242, 21);
-            this.textBox3.TabIndex = 173;
+            this.txtBoxNomeDoCli.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtBoxNomeDoCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNomeDoCli.Location = new System.Drawing.Point(13, 161);
+            this.txtBoxNomeDoCli.Name = "txtBoxNomeDoCli";
+            this.txtBoxNomeDoCli.ReadOnly = true;
+            this.txtBoxNomeDoCli.Size = new System.Drawing.Size(242, 21);
+            this.txtBoxNomeDoCli.TabIndex = 173;
             // 
             // txtboxgenero
             // 
@@ -192,17 +192,17 @@
             this.txtboxgenero.Size = new System.Drawing.Size(112, 21);
             this.txtboxgenero.TabIndex = 168;
             // 
-            // txtboxtelefone
+            // txtboxTelefoneCli
             // 
-            this.txtboxtelefone.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtboxtelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtboxtelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxtelefone.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtboxtelefone.Location = new System.Drawing.Point(13, 209);
-            this.txtboxtelefone.Name = "txtboxtelefone";
-            this.txtboxtelefone.ReadOnly = true;
-            this.txtboxtelefone.Size = new System.Drawing.Size(160, 21);
-            this.txtboxtelefone.TabIndex = 167;
+            this.txtboxTelefoneCli.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtboxTelefoneCli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtboxTelefoneCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxTelefoneCli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtboxTelefoneCli.Location = new System.Drawing.Point(13, 209);
+            this.txtboxTelefoneCli.Name = "txtboxTelefoneCli";
+            this.txtboxTelefoneCli.ReadOnly = true;
+            this.txtboxTelefoneCli.Size = new System.Drawing.Size(160, 21);
+            this.txtboxTelefoneCli.TabIndex = 167;
             // 
             // txtBoxCPFcliente
             // 
@@ -236,9 +236,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label9.Location = new System.Drawing.Point(261, 144);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(96, 16);
+            this.label9.Size = new System.Drawing.Size(136, 16);
             this.label9.TabIndex = 136;
-            this.label9.Text = "CPF do Cliente";
+            this.label9.Text = "CPF do Responsavél";
             // 
             // label11
             // 
@@ -456,7 +456,7 @@
         private System.Windows.Forms.TextBox txtBoxCPF;
         private System.Windows.Forms.TextBox txtBoxCPFcliente;
         private System.Windows.Forms.TextBox txtboxgenero;
-        private System.Windows.Forms.TextBox txtboxtelefone;
+        private System.Windows.Forms.TextBox txtboxTelefoneCli;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtboxPesquisa;
         private System.Windows.Forms.Label label2;
@@ -466,7 +466,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtboxEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBoxNomeDoCli;
         private System.Windows.Forms.MaskedTextBox msktextData;
         private System.Windows.Forms.RadioButton rdbCpfCliente;
         private System.Windows.Forms.RadioButton rdbCpfAluno;
