@@ -182,10 +182,10 @@
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.linkLabel2.Location = new System.Drawing.Point(461, 484);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(308, 24);
+            this.linkLabel2.Size = new System.Drawing.Size(299, 24);
             this.linkLabel2.TabIndex = 9;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Projeto Sistema de Gestão Esscolar";
+            this.linkLabel2.Text = "Projeto Sistema de Gestão Escolar";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // label6

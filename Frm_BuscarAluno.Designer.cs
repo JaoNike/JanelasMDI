@@ -53,6 +53,10 @@
             this.txtboxPesquisa = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.rdbCpfCliente = new System.Windows.Forms.RadioButton();
+            this.rdbCpfAluno = new System.Windows.Forms.RadioButton();
+            this.rdbCodigoCli = new System.Windows.Forms.RadioButton();
+            this.rdbMatricula = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -349,7 +353,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Calibri", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(328, 39);
+            this.label3.Location = new System.Drawing.Point(348, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(158, 33);
             this.label3.TabIndex = 44;
@@ -359,12 +363,56 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(196, 135);
+            this.label4.Location = new System.Drawing.Point(206, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(438, 13);
             this.label4.TabIndex = 45;
             this.label4.Text = "pesquisar por CPF do cliente ou do propio aluno ou buscar por matricula/codigo do" +
     " cliente..\r\n";
+            // 
+            // rdbCpfCliente
+            // 
+            this.rdbCpfCliente.AutoSize = true;
+            this.rdbCpfCliente.Location = new System.Drawing.Point(223, 135);
+            this.rdbCpfCliente.Name = "rdbCpfCliente";
+            this.rdbCpfCliente.Size = new System.Drawing.Size(95, 17);
+            this.rdbCpfCliente.TabIndex = 46;
+            this.rdbCpfCliente.TabStop = true;
+            this.rdbCpfCliente.Text = "CPF do Cliente";
+            this.rdbCpfCliente.UseVisualStyleBackColor = true;
+            // 
+            // rdbCpfAluno
+            // 
+            this.rdbCpfAluno.AutoSize = true;
+            this.rdbCpfAluno.Location = new System.Drawing.Point(324, 135);
+            this.rdbCpfAluno.Name = "rdbCpfAluno";
+            this.rdbCpfAluno.Size = new System.Drawing.Size(90, 17);
+            this.rdbCpfAluno.TabIndex = 47;
+            this.rdbCpfAluno.TabStop = true;
+            this.rdbCpfAluno.Text = "CPF do Aluno";
+            this.rdbCpfAluno.UseVisualStyleBackColor = true;
+            // 
+            // rdbCodigoCli
+            // 
+            this.rdbCodigoCli.AutoSize = true;
+            this.rdbCodigoCli.Location = new System.Drawing.Point(420, 135);
+            this.rdbCodigoCli.Name = "rdbCodigoCli";
+            this.rdbCodigoCli.Size = new System.Drawing.Size(107, 17);
+            this.rdbCodigoCli.TabIndex = 48;
+            this.rdbCodigoCli.TabStop = true;
+            this.rdbCodigoCli.Text = "Codigo do cliente";
+            this.rdbCodigoCli.UseVisualStyleBackColor = true;
+            // 
+            // rdbMatricula
+            // 
+            this.rdbMatricula.AutoSize = true;
+            this.rdbMatricula.Location = new System.Drawing.Point(533, 135);
+            this.rdbMatricula.Name = "rdbMatricula";
+            this.rdbMatricula.Size = new System.Drawing.Size(112, 17);
+            this.rdbMatricula.TabIndex = 49;
+            this.rdbMatricula.TabStop = true;
+            this.rdbMatricula.Text = "Matricula do aluno";
+            this.rdbMatricula.UseVisualStyleBackColor = true;
             // 
             // Frm_BuscarAluno
             // 
@@ -373,6 +421,10 @@
             this.BackgroundImage = global::JanelasMDI.Properties.Resources.FundoQuaseBranco;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(835, 571);
+            this.Controls.Add(this.rdbMatricula);
+            this.Controls.Add(this.rdbCodigoCli);
+            this.Controls.Add(this.rdbCpfAluno);
+            this.Controls.Add(this.rdbCpfCliente);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtboxPesquisa);
@@ -416,5 +468,9 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.MaskedTextBox msktextData;
+        private System.Windows.Forms.RadioButton rdbCpfCliente;
+        private System.Windows.Forms.RadioButton rdbCpfAluno;
+        private System.Windows.Forms.RadioButton rdbCodigoCli;
+        private System.Windows.Forms.RadioButton rdbMatricula;
     }
 }

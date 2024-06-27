@@ -83,6 +83,8 @@ namespace JanelasMDI
                 {
                     lblNaoEncontrada.Visible = true;
                     lblEncontrado.Visible = false;
+                    limpar();
+                    
                 }
     
             }
@@ -94,6 +96,24 @@ namespace JanelasMDI
             {
                 conexao.Close();
             }
+        }
+        private void limpar()
+        {
+            txtboxCodigo.Clear();
+            mskData.Clear();
+            txtboxNome.Clear();
+            txtboxGenero.Text = "";
+            txtBoxCep.Clear();
+            txtboxRua.Clear();
+            txtBoxBairro.Clear();
+            txtBoxNumero.Clear();
+            txtboxCidade.Clear();
+            mskEstado.Text = "";
+            txtboxPais.Clear();
+            mskBoxTelefone.Clear();
+            txtBoxEmail.Clear();
+            mskCpf.Clear();
+            txtboxProfissao.Clear();
         }
         private void bloco_Paint(object sender, PaintEventArgs e)
         {
