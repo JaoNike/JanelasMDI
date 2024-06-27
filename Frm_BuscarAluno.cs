@@ -1,13 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Asn1.Pkcs;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JanelasMDI
@@ -22,12 +14,6 @@ namespace JanelasMDI
         {
             InitializeComponent();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void Frm_BuscarAluno_Load(object sender, EventArgs e)
         {
 
@@ -35,7 +21,7 @@ namespace JanelasMDI
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-
+            pesquisarAluno();
         }
         private void pesquisarAluno()
         {
@@ -59,24 +45,23 @@ namespace JanelasMDI
                     string numero;
 
                     if (dr.Read())
-                    {                      
+                    {
                         msktextData.Text = Convert.ToString(dr["dtnascimento_cli"]);
                         txtboxgenero.Text = Convert.ToString(dr["sexo_cli"]);
-                        txtBoxNome.Text = Convert.ToString(dr["nome_cli"]);                    
+                        txtBoxNome.Text = Convert.ToString(dr["nome_cli"]);
                         txtboxEmail.Text = Convert.ToString(dr["email_cli"]);
+                        msktextData.Text = Convert.ToString(dr["dtnascimento_cli"]);
+                        txtboxgenero.Text = Convert.ToString(dr["sexo_cli"]);
                         txtBoxCPF.Text = Convert.ToString(dr["cpf_cli"]);
                         DDD = Convert.ToString(dr["dddcel_cli"]);
-                        numero = Convert.ToString(dr["numerocel_cli"]);                    
+                        numero = Convert.ToString(dr["numerocel_cli"]);
                         txtboxtelefone.Text = DDD + numero;
-
                     }
-                    
                 }
                 else
                 {
-                   
-                }
 
+                }
             }
             catch (Exception ex)
             {
@@ -86,10 +71,6 @@ namespace JanelasMDI
             {
                 conexao.Close();
             }
-        }
-        private void pesquisar()
-        {
-           
         }
     }
 }
