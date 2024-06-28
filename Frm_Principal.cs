@@ -61,9 +61,9 @@ namespace JanelasMDI
 
         private void agendarConsultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Frm_AgendarConsulta frm_Agendar = new Frm_AgendarConsulta();
-            frm_Agendar.MdiParent = this;
-            frm_Agendar.Show();
+            Frm_Listar listar = new Frm_Listar("alu");
+            listar.MdiParent = this;
+            listar.Show();
         }
 
         private void ajudaToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -133,7 +133,9 @@ namespace JanelasMDI
 
         private void listarClientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Frm_Listar listar = new Frm_Listar("cli");
+            listar.MdiParent = this;
+            listar.Show();
         }
 
         private void buscarAlunoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -171,7 +173,7 @@ namespace JanelasMDI
 
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            VisualizarUsuarioDoSistema visualizar = new VisualizarUsuarioDoSistema();
+            Frm_Listar visualizar = new Frm_Listar("usu");
             visualizar.MdiParent = this;
             visualizar.Show();
         }

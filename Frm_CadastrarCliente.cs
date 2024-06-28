@@ -45,7 +45,9 @@ namespace JanelasMDI
         }
         private void cadastrar_()
         {
-
+            bool erro = false;
+            string[] verificarlos = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text};
+            string[] verificarlos2 = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text,txtBoxEmail.Text,txtBoxNumero.Text,mskTxtDDD.Text,mskCpf.Text,dtnascimento.Text,cbxGenero.Text};
             conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
             strSQl = $"INSERT INTO t_cliente (nome_cli, sexo_cli, cep_cli, rua_cli, bairro_cli, numero_cli, " +
                 $"cidade_cli,estado_cli, pais_cli, dddcel_cli, numerocel_cli, email_cli, dtnascimento_cli, " +
@@ -54,47 +56,85 @@ namespace JanelasMDI
 
             comando = new MySqlCommand(strSQl, conexao);
 
-            //fazer o if verificando se os campos estão vazios
 
-            try
+            foreach (string str in verificarlos)
             {
-                Arruma();
-                comando.Parameters.AddWithValue("@nome", txtNome.Text);
-                comando.Parameters.AddWithValue("@sexo", cbxGenero.Text);
-                comando.Parameters.AddWithValue("@cep", txtBoxCep.Text);
-                comando.Parameters.AddWithValue("@rua", txtboxRua.Text);
-                comando.Parameters.AddWithValue("@bairro", txtBoxBairro.Text);
-                comando.Parameters.AddWithValue("@numero", txtBoxNumero.Text);
-                comando.Parameters.AddWithValue("@cidade", txtBoxCidade.Text);
-                comando.Parameters.AddWithValue("@estado", CmboxEstado.Text);
-                comando.Parameters.AddWithValue("@pais", txtpais.Text);
-                comando.Parameters.AddWithValue("@dddcel", nmddd);
-                comando.Parameters.AddWithValue("@numerocel", nm);
-                comando.Parameters.AddWithValue("@email", txtBoxEmail.Text);
-                comando.Parameters.AddWithValue("@data", data);
-                comando.Parameters.AddWithValue("@cpf",cpf);
-                comando.Parameters.AddWithValue("@profissao", txtProfissao.Text);
+                if (!ContemApenasLetrasEEspacos(str))
+                {
+                    MessageBox.Show("O seguinte conteudo deve ser verificado:" + str);
+                    erro = true;
+                    break;
+                }         
+            }
+            if (!erro)
+            {
+                foreach (string s in verificarlos2)
+                {
+                    if (s.Equals(""))
+                    {
+                        MessageBox.Show("Nenhum campo pode está vazio");
+                        erro = true;
+                        break;
+                    }
 
-                conexao.Open();
-
-                comando.ExecuteNonQuery();
-
-                MessageBox.Show("Cadastro salva!", "Confirmação de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                Limpar();
-
-
-
+                }
+                
+            }
+            if (!erro) 
+            {
+                if (!txtBoxEmail.Text.Contains("@") && !txtBoxEmail.Text.Contains("."))
+                {
+                    MessageBox.Show("O Email informado não é valido ");
+                    erro = true;
+                }               
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+           
+
+
+            if (!erro)
+            {             
+                try
+                {
+                    Arruma();
+                    comando.Parameters.AddWithValue("@nome", txtNome.Text);
+                    comando.Parameters.AddWithValue("@sexo", cbxGenero.Text);
+                    comando.Parameters.AddWithValue("@cep", txtBoxCep.Text);
+                    comando.Parameters.AddWithValue("@rua", txtboxRua.Text);
+                    comando.Parameters.AddWithValue("@bairro", txtBoxBairro.Text);
+                    comando.Parameters.AddWithValue("@numero", txtBoxNumero.Text);
+                    comando.Parameters.AddWithValue("@cidade", txtBoxCidade.Text);
+                    comando.Parameters.AddWithValue("@estado", CmboxEstado.Text);
+                    comando.Parameters.AddWithValue("@pais", txtpais.Text);
+                    comando.Parameters.AddWithValue("@dddcel", nmddd);
+                    comando.Parameters.AddWithValue("@numerocel", nm);
+                    comando.Parameters.AddWithValue("@email", txtBoxEmail.Text);
+                    comando.Parameters.AddWithValue("@data", data);
+                    comando.Parameters.AddWithValue("@cpf",cpf);
+                    comando.Parameters.AddWithValue("@profissao", txtProfissao.Text);
+
+                    conexao.Open();
+
+                    comando.ExecuteNonQuery();
+
+                    MessageBox.Show("Cadastro salva!", "Confirmação de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Limpar();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                finally
+                {
+                    conexao.Close();
+                }
             }
-            finally
-            {
-                conexao.Close();
-            }
+        }
+        public bool ContemApenasLetrasEEspacos(string text)
+        {
+            return text.All(ch => char.IsLetter(ch) || char.IsWhiteSpace(ch));
         }
 
         private void button1_Click(object sender, EventArgs e)
