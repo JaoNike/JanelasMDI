@@ -38,7 +38,7 @@ namespace JanelasMDI
             }
         }
 
-        private void Frm_ListarClientes_Load(object sender, EventArgs e)
+        private void Frm_Listar_Load(object sender, EventArgs e)
         {
             listar_clientes();
         }

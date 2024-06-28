@@ -81,7 +81,7 @@
             this.Controls.Add(this.dgv);
             this.Name = "Frm_ListarClientes";
             this.Text = "Agendar Consulta";
-            this.Load += new System.EventHandler(this.Frm_ListarClientes_Load);
+            this.Load += new System.EventHandler(this.Frm_Listar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -46,8 +46,10 @@ namespace JanelasMDI
         private void cadastrar_()
         {
             bool erro = false;
-            string[] verificarlos = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text};
-            string[] verificarlos2 = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text,txtBoxEmail.Text,txtBoxNumero.Text,mskTxtDDD.Text,mskCpf.Text,dtnascimento.Text,cbxGenero.Text};
+            string[] verificarlos = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text };
+            string[] verificarlos2 = { txtNome.Text, txtboxRua.Text, txtpais.Text, txtBoxCidade.Text, txtProfissao.Text, txtBoxBairro.Text,
+                                        txtBoxEmail.Text,txtBoxNumero.Text,mskTxtDDD.Text,mskCpf.Text,dtnascimento.Text,cbxGenero.Text};
+
             conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
             strSQl = $"INSERT INTO t_cliente (nome_cli, sexo_cli, cep_cli, rua_cli, bairro_cli, numero_cli, " +
                 $"cidade_cli,estado_cli, pais_cli, dddcel_cli, numerocel_cli, email_cli, dtnascimento_cli, " +
@@ -64,7 +66,7 @@ namespace JanelasMDI
                     MessageBox.Show("O seguinte conteudo deve ser verificado:" + str);
                     erro = true;
                     break;
-                }         
+                }
             }
             if (!erro)
             {
@@ -78,21 +80,18 @@ namespace JanelasMDI
                     }
 
                 }
-                
+
             }
-            if (!erro) 
+            if (!erro)
             {
                 if (!txtBoxEmail.Text.Contains("@") && !txtBoxEmail.Text.Contains("."))
                 {
                     MessageBox.Show("O Email informado não é valido ");
                     erro = true;
-                }               
-
+                }
             }
-           
-
             if (!erro)
-            {             
+            {
                 try
                 {
                     Arruma();
@@ -109,7 +108,7 @@ namespace JanelasMDI
                     comando.Parameters.AddWithValue("@numerocel", nm);
                     comando.Parameters.AddWithValue("@email", txtBoxEmail.Text);
                     comando.Parameters.AddWithValue("@data", data);
-                    comando.Parameters.AddWithValue("@cpf",cpf);
+                    comando.Parameters.AddWithValue("@cpf", cpf);
                     comando.Parameters.AddWithValue("@profissao", txtProfissao.Text);
 
                     conexao.Open();

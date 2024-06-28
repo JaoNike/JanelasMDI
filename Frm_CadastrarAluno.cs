@@ -68,8 +68,8 @@ namespace JanelasMDI
 //3 - listar cliente V
 //4 - listar alunos V
 //5 - Tradamento de dados V
-//6 - Ajuda x
-//7 - Adicionar Icons na barra de ferramentas x
+//6 - Ajuda V
+//7 - Adicionar Icons na barra de ferramentas tt
 //8 - Melhora o desiner se possivel x
             else
             {
