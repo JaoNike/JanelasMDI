@@ -37,53 +37,78 @@ namespace JanelasMDI
         }
         public void salvar()
         {
-            //if (txtNomeCompleto.Text.Equals("") || !mTDdd.MaskCompleted || !mTTel.Text.Equals("") || !mskCpfAluno.MaskCompleted ||
-            // !mskCpfClie.MaskCompleted || txtEmail.Text == (""))
-            //{
-            //    MessageBox.Show("Erro! Algum dos espaços não foram preenchidos");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Aluno cadastrado com sucesso");
-            //}
-            try
+            bool erro = false;
+            
+            string[] verificarlos = { txtBoxNome.Text,mskBoxDDD.Text,mskBoxTelefone.Text,txtBoxEmail.Text,dtpDataNas.Text,mskBoxCpfAluno.Text,mskBoxCpfCliente.Text,txtboxCodigo.Text,cmboxgenero.Text,};
+            if (!erro)
             {
+                foreach (string s in verificarlos)
+                {
+                    if (s.Equals(""))
+                    {
+                        MessageBox.Show("Nenhum campo pode está vazio");
+                        erro = true;
+                        break;
+                    }
 
-                conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
-                strSQL = "INSERT INTO t_aluno (nome_aluno,dddcel_aluno,numerocel_aluno,email_aluno,dtnascimento_aluno,cpf_aluno,cpf_cli,codigo_cliente,sexo_aluno) VALUES (@nome,@ddd, @numeroCel, @email, @dtnascimento, @cpfAluno, @fk_cpfCliente,@fk_codigo_cliente,@genero)";
-
-                comando = new MySqlCommand(strSQL, conexao);
-
-                comando.Parameters.AddWithValue("@nome", txtBoxNome.Text);
-                comando.Parameters.AddWithValue("@ddd", RemoveMask(mskBoxDDD.Text));
-                comando.Parameters.AddWithValue("@numeroCel", RemoveMask(mskBoxTelefone.Text));
-                comando.Parameters.AddWithValue("@email", txtBoxEmail.Text);
-                comando.Parameters.AddWithValue("@dtnascimento", Convert.ToDateTime(dtpDataNas.Text));
-                comando.Parameters.AddWithValue("@cpfAluno", RemoveMask(mskBoxCpfAluno.Text));
-                comando.Parameters.AddWithValue("@fk_cpfCliente", RemoveMask(mskBoxCpfCliente.Text));
-                comando.Parameters.AddWithValue("@fk_codigo_cliente", txtboxCodigo.Text);
-                comando.Parameters.AddWithValue("@genero", cmboxgenero.Text);
-
-                conexao.Open();
-
-                comando.ExecuteNonQuery();
-
-                MessageBox.Show("Cadastro salva!", "Confirmação de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                limpar();
-               
+                }
             }
 
-            catch (Exception ex)
+            if(!erro)
             {
-                MessageBox.Show("ERRO: " + ex.Message);
-            }
-            finally
+                if (!ContemApenasLetrasEEspacos(txtBoxNome.Text) && !ContemApenasLetrasEEspacos(cmboxgenero.Text))
+                {
+                    MessageBox.Show("Apenas letras são aceitas no campo Nome e  Genero ");
+                    erro = true;
+
+                }
+            }           
+            
+            else
             {
-                conexao.Close();
+                try
+                {
+
+                    conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
+                    strSQL = "INSERT INTO t_aluno (nome_aluno,dddcel_aluno,numerocel_aluno,email_aluno,dtnascimento_aluno,cpf_aluno,cpf_cli,codigo_cliente,sexo_aluno) VALUES (@nome,@ddd, @numeroCel, @email, @dtnascimento, @cpfAluno, @fk_cpfCliente,@fk_codigo_cliente,@genero)";
+
+                    comando = new MySqlCommand(strSQL, conexao);
+
+                    comando.Parameters.AddWithValue("@nome", txtBoxNome.Text);
+                    comando.Parameters.AddWithValue("@ddd", RemoveMask(mskBoxDDD.Text));
+                    comando.Parameters.AddWithValue("@numeroCel", RemoveMask(mskBoxTelefone.Text));
+                    comando.Parameters.AddWithValue("@email", txtBoxEmail.Text);
+                    comando.Parameters.AddWithValue("@dtnascimento", Convert.ToDateTime(dtpDataNas.Text));
+                    comando.Parameters.AddWithValue("@cpfAluno", RemoveMask(mskBoxCpfAluno.Text));
+                    comando.Parameters.AddWithValue("@fk_cpfCliente", RemoveMask(mskBoxCpfCliente.Text));
+                    comando.Parameters.AddWithValue("@fk_codigo_cliente", txtboxCodigo.Text);
+                    comando.Parameters.AddWithValue("@genero", cmboxgenero.Text);
+
+                    conexao.Open();
+
+                    comando.ExecuteNonQuery();
+
+                    MessageBox.Show("Cadastro salva!", "Confirmação de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    limpar();
+
+                }
+
+                catch (Exception ex)
+                {
+                    MessageBox.Show("ERRO: " + ex.Message);
+                }
+                finally
+                {
+                    conexao.Close();
+                }
             }
+           
         }
-
+        public bool ContemApenasLetrasEEspacos(string text)
+        {
+            return text.All(ch => char.IsLetter(ch) || char.IsWhiteSpace(ch));
+        }
         private void Pegar_codigo_cliente(string cpf)
         {
             try

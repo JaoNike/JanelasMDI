@@ -91,7 +91,6 @@ namespace JanelasMDI
             }
            
 
-
             if (!erro)
             {             
                 try
@@ -136,7 +135,6 @@ namespace JanelasMDI
         {
             return text.All(ch => char.IsLetter(ch) || char.IsWhiteSpace(ch));
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             txtNome.Text = "Joao";
@@ -193,7 +191,6 @@ namespace JanelasMDI
                 txtBoxCep.Focus();
             }
         }
-
         private void Limpar()
         {
             txtNome.Clear();
@@ -212,17 +209,14 @@ namespace JanelasMDI
             txtProfissao.Clear();
 
         }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             cadastrar_();
         }
-
         private void txtBoxCep_Leave(object sender, EventArgs e)
         {
             executarBusca();
         }
-
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             Limpar();
