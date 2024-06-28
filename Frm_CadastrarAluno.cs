@@ -58,12 +58,19 @@ namespace JanelasMDI
             {
                 if (!ContemApenasLetrasEEspacos(txtBoxNome.Text) && !ContemApenasLetrasEEspacos(cmboxgenero.Text))
                 {
-                    MessageBox.Show("Apenas letras são aceitas no campo Nome e  Genero ");
+                    MessageBox.Show("Apenas letras são aceitas no campo Nome e Genero ");
                     erro = true;
 
                 }
-            }           
-            
+            }
+//1 - avisar que ta salvo V
+//2 - limpar pesquisar V
+//3 - listar cliente V
+//4 - listar alunos V
+//5 - Tradamento de dados V
+//6 - Ajuda x
+//7 - Adicionar Icons na barra de ferramentas x
+//8 - Melhora o desiner se possivel x
             else
             {
                 try
