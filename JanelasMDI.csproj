@@ -310,5 +310,8 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp_logo.svg.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IDPhoto_20240225_210338~2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

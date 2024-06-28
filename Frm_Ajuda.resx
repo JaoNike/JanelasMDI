@@ -117,4 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="panel1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Janelas:
+Organizar na Horizontal: Esta função organiza todas as janelas 
+abertas do programa em uma disposição horizontal. Cada janela 
+será redimensionada para se alinhar lado a lado, permitindo que 
+você visualize várias janelas simultaneamente em linhas horizontais.
+
+Organizar na Vertical: Esta função organiza todas as janelas abertas 
+do programa em uma disposição vertical. Cada janela será 
+redimensionada para se alinhar uma ao lado da outra, permitindo 
+que você visualize várias janelas simultaneamente em colunas verticais.
+
+Organizar em Cascata: Esta função organiza todas as janelas abertas 
+do programa em uma disposição em cascata. As janelas serão empilhadas 
+uma sobre a outra com um pequeno deslocamento, permitindo que 
+você veja o título de cada janela e acesse facilmente qualquer uma delas.
+
+Minimizar: Esta função minimiza a janela atual, reduzindo-a para a
+ barra de tarefas ou a área de ícones do programa. A janela permanecerá 
+aberta, mas não estará visível até que você a restaure.
+
+Maximizar: Esta função maximiza a janela atual, expandindo-a para 
+ocupar toda a área disponível na tela. Isso é útil para visualizar mais 
+conteúdo ou para focar totalmente na janela ativa.
+
+Ajuda: Explicação das funcões</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Arquivo: Contem as funcões:
+fechar todas as janela(que fecha todas janelas dentro da janela principal)
+Fechar (Que fecha o programa todo).
+
+Exibir: Contem a função de esconder a barra de ferramentas e exibir a
+mesma
+
+Caso você seja administrador a aba administração ira aparecer entre Exibir
+e Sistema, que contem as seguintes funções: 
+Cadastra usuario (Cria uma conta nova para acessar o programa)
+Visualizar usuarios ( Lista os usuarios criados)
+
+Sistema: Contem as funções: 
+Cadastrar Cliente (Cadastra novos clientes no banco de dados)
+LIstar Clientes (Lista todos os clientes  cadastrados)
+Buscar Cliente (Busca por um cliente ja cadastrados)
+Cadastrar Aluno ( Cadastra um novo aluno no banco de dados)
+Buscar Aluno (Busca por alunos ja cadastrados)
+Lista Alunos (Lista todos alunos cadastrados)
+
+
+</value>
+  </data>
 </root>

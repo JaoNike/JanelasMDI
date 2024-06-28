@@ -200,5 +200,12 @@ namespace JanelasMDI
             }
 
         }
+
+        private void toolbuscarCliente_Click(object sender, EventArgs e)
+        {
+            Frm_BuscarClientel frm_BuscarAnimal = new Frm_BuscarClientel();
+            frm_BuscarAnimal.MdiParent = this;
+            frm_BuscarAnimal.Show();
+        }
     }
 }

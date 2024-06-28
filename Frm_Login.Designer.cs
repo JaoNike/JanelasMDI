@@ -41,7 +41,7 @@
             this.ckbExibir.AutoSize = true;
             this.ckbExibir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbExibir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ckbExibir.Location = new System.Drawing.Point(175, 179);
+            this.ckbExibir.Location = new System.Drawing.Point(181, 167);
             this.ckbExibir.Name = "ckbExibir";
             this.ckbExibir.Size = new System.Drawing.Size(101, 20);
             this.ckbExibir.TabIndex = 0;
@@ -55,7 +55,7 @@
             this.btn__Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn__Entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__Entrar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn__Entrar.Location = new System.Drawing.Point(230, 215);
+            this.btn__Entrar.Location = new System.Drawing.Point(239, 204);
             this.btn__Entrar.Name = "btn__Entrar";
             this.btn__Entrar.Size = new System.Drawing.Size(122, 30);
             this.btn__Entrar.TabIndex = 1;
@@ -65,14 +65,14 @@
             // 
             // txtLogin
             // 
-            this.txtLogin.Location = new System.Drawing.Point(175, 97);
+            this.txtLogin.Location = new System.Drawing.Point(181, 85);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(227, 20);
             this.txtLogin.TabIndex = 2;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(175, 153);
+            this.txtSenha.Location = new System.Drawing.Point(181, 141);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(227, 20);
@@ -83,7 +83,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label1.Location = new System.Drawing.Point(175, 81);
+            this.label1.Location = new System.Drawing.Point(181, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 16);
             this.label1.TabIndex = 4;
@@ -94,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(175, 137);
+            this.label2.Location = new System.Drawing.Point(181, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 5;
@@ -113,6 +113,7 @@
             this.Controls.Add(this.btn__Entrar);
             this.Controls.Add(this.ckbExibir);
             this.Name = "Frm_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

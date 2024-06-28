@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salvarComoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +47,6 @@
             this.buscarAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agendarConsultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.agendarAtendimentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarAtendimentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.janelaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarNaHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarNaVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -65,6 +64,8 @@
             this.tsbCadastroDeClient = new System.Windows.Forms.ToolStripButton();
             this.tsbCadastrarAluno = new System.Windows.Forms.ToolStripButton();
             this.tsbSobre = new System.Windows.Forms.ToolStripButton();
+            this.toolbuscarCliente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -142,14 +143,14 @@
             // CadastrarUsuarioToolStripMenuItem
             // 
             this.CadastrarUsuarioToolStripMenuItem.Name = "CadastrarUsuarioToolStripMenuItem";
-            this.CadastrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CadastrarUsuarioToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.CadastrarUsuarioToolStripMenuItem.Text = "Cadastrar Usuário";
             this.CadastrarUsuarioToolStripMenuItem.Click += new System.EventHandler(this.CadastrarUsuarioToolStripMenuItem_Click);
             // 
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.calculadoraToolStripMenuItem.Text = "Visualizar Usuário";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
@@ -163,9 +164,7 @@
             this.cadastrarAnimalToolStripMenuItem,
             this.buscarAlunoToolStripMenuItem,
             this.agendarConsultaToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.agendarAtendimentoToolStripMenuItem,
-            this.visualizarAtendimentosToolStripMenuItem});
+            this.toolStripSeparator6});
             this.sistemaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
@@ -228,18 +227,6 @@
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
             this.toolStripSeparator6.Size = new System.Drawing.Size(201, 6);
-            // 
-            // agendarAtendimentoToolStripMenuItem
-            // 
-            this.agendarAtendimentoToolStripMenuItem.Name = "agendarAtendimentoToolStripMenuItem";
-            this.agendarAtendimentoToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.agendarAtendimentoToolStripMenuItem.Text = "Agendar Atendimento";
-            // 
-            // visualizarAtendimentosToolStripMenuItem
-            // 
-            this.visualizarAtendimentosToolStripMenuItem.Name = "visualizarAtendimentosToolStripMenuItem";
-            this.visualizarAtendimentosToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
-            this.visualizarAtendimentosToolStripMenuItem.Text = "Visualizar Atendimentos";
             // 
             // janelaToolStripMenuItem
             // 
@@ -342,11 +329,13 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCadastroDeClient,
             this.tsbCadastrarAluno,
-            this.tsbSobre});
+            this.tsbSobre,
+            this.toolbuscarCliente,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(1, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
@@ -386,6 +375,25 @@
             this.tsbSobre.Size = new System.Drawing.Size(23, 22);
             this.tsbSobre.Text = "Sobre o Sistema";
             this.tsbSobre.Click += new System.EventHandler(this.tsbSobre_Click);
+            // 
+            // toolbuscarCliente
+            // 
+            this.toolbuscarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolbuscarCliente.Image = global::JanelasMDI.Properties.Resources.icons8_pesquisar_502;
+            this.toolbuscarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolbuscarCliente.Name = "toolbuscarCliente";
+            this.toolbuscarCliente.Size = new System.Drawing.Size(23, 22);
+            this.toolbuscarCliente.Text = "toolStripButton1";
+            this.toolbuscarCliente.Click += new System.EventHandler(this.toolbuscarCliente_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // Frm_Principal
             // 
@@ -442,13 +450,13 @@
         private System.Windows.Forms.ToolStripMenuItem listarClientesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem buscarAlunoToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
-        private System.Windows.Forms.ToolStripMenuItem agendarAtendimentoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarAtendimentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripButton tsbCadastroDeClient;
         private System.Windows.Forms.ToolStripButton tsbCadastrarAluno;
         private System.Windows.Forms.ToolStripButton tsbSobre;
         private System.Windows.Forms.ToolStripMenuItem usuarioMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exibirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton toolbuscarCliente;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }
 

@@ -45,6 +45,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -253,6 +254,15 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::JanelasMDI.Properties.Resources.IDPhoto_20240225_210338_2;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(44, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(194, 199);
+            this.panel1.TabIndex = 15;
+            // 
             // Frm_Sobre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -262,6 +272,7 @@
             this.BackgroundImage = global::JanelasMDI.Properties.Resources.me_Sobre1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1196, 788);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
@@ -309,5 +320,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

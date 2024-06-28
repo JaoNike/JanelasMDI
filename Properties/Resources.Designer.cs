@@ -273,6 +273,16 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap IDPhoto_20240225_210338_2 {
+            get {
+                object obj = ResourceManager.GetObject("IDPhoto_20240225_210338~2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap me_Sobre {
             get {
                 object obj = ResourceManager.GetObject("me_Sobre", resourceCulture);
