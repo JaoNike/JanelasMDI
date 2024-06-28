@@ -313,5 +313,11 @@
   <ItemGroup>
     <None Include="Resources\IDPhoto_20240225_210338~2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\procurar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membro.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

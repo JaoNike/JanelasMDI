@@ -303,6 +303,26 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap membro {
+            get {
+                object obj = ResourceManager.GetObject("membro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap procurar__1_ {
+            get {
+                object obj = ResourceManager.GetObject("procurar (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Retangulo {
             get {
                 object obj = ResourceManager.GetObject("Retangulo", resourceCulture);

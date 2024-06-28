@@ -86,7 +86,7 @@
             this.menuStrip1.MdiWindowListItem = this.janelaToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.menuStrip1.Size = new System.Drawing.Size(804, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(878, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -339,12 +339,13 @@
             this.toolStrip1.Location = new System.Drawing.Point(1, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(804, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(878, 25);
             this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // tsbCadastroDeClient
             // 
+            this.tsbCadastroDeClient.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.tsbCadastroDeClient.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbCadastroDeClient.Image = global::JanelasMDI.Properties.Resources.icons8_adicionar_usuário_masculino_96;
             this.tsbCadastroDeClient.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -368,6 +369,7 @@
             // tsbSobre
             // 
             this.tsbSobre.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbSobre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tsbSobre.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.tsbSobre.Image = global::JanelasMDI.Properties.Resources.icons8_busca_67;
             this.tsbSobre.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -379,7 +381,7 @@
             // toolbuscarCliente
             // 
             this.toolbuscarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolbuscarCliente.Image = global::JanelasMDI.Properties.Resources.icons8_pesquisar_502;
+            this.toolbuscarCliente.Image = global::JanelasMDI.Properties.Resources.procurar__1_;
             this.toolbuscarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolbuscarCliente.Name = "toolbuscarCliente";
             this.toolbuscarCliente.Size = new System.Drawing.Size(23, 22);
@@ -389,7 +391,7 @@
             // toolStripButton1
             // 
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.Image = global::JanelasMDI.Properties.Resources.membro;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
@@ -399,9 +401,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(879, 535);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "Frm_Principal";
             this.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
