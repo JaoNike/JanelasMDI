@@ -28,7 +28,7 @@ namespace JanelasMDI
         {
             if (rdbCodigoCli.Checked)
             {
-                strSQL = "select * from t_cliente c join t_aluno a on c.CodigoCli = @valor and a.codigo_cliente = @valor;";
+                strSQL = "select * from t_cliente c join t_aluno a on c.CodigoCli = @valor and a.cpf_cli = c.cpf_cli;";
                 pesquisarAluno();
             }
             else if (rdbCpfAluno.Checked)

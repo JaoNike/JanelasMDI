@@ -16,7 +16,7 @@ namespace JanelasMDI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Ajuda());
+            Application.Run(new Frm_BuscarAluno());
         }
     }
 }
