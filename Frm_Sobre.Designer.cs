@@ -166,7 +166,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.linkLabel1.Location = new System.Drawing.Point(597, 293);
+            this.linkLabel1.Location = new System.Drawing.Point(678, 317);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(181, 24);
             this.linkLabel1.TabIndex = 5;
@@ -223,6 +223,7 @@
             this.label12.Size = new System.Drawing.Size(574, 147);
             this.label12.TabIndex = 12;
             this.label12.Text = resources.GetString("label12.Text");
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // button1
             // 

@@ -38,8 +38,6 @@
             this.txtBoxCPF = new System.Windows.Forms.TextBox();
             this.txtBoxNomeDoCli = new System.Windows.Forms.TextBox();
             this.txtboxgenero = new System.Windows.Forms.TextBox();
-            this.txtboxTelefoneCli = new System.Windows.Forms.TextBox();
-            this.txtBoxCPFcliente = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -57,12 +55,16 @@
             this.rdbCpfAluno = new System.Windows.Forms.RadioButton();
             this.rdbCodigoCli = new System.Windows.Forms.RadioButton();
             this.rdbMatricula = new System.Windows.Forms.RadioButton();
+            this.txtboxTelefoneCli = new System.Windows.Forms.MaskedTextBox();
+            this.txtBoxCPFcliente = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.txtBoxCPFcliente);
+            this.panel1.Controls.Add(this.txtboxTelefoneCli);
             this.panel1.Controls.Add(this.msktextData);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label6);
@@ -72,8 +74,6 @@
             this.panel1.Controls.Add(this.txtBoxCPF);
             this.panel1.Controls.Add(this.txtBoxNomeDoCli);
             this.panel1.Controls.Add(this.txtboxgenero);
-            this.panel1.Controls.Add(this.txtboxTelefoneCli);
-            this.panel1.Controls.Add(this.txtBoxCPFcliente);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label11);
@@ -91,6 +91,7 @@
             // 
             // msktextData
             // 
+            this.msktextData.BackColor = System.Drawing.Color.WhiteSmoke;
             this.msktextData.Location = new System.Drawing.Point(261, 109);
             this.msktextData.Mask = "99/99/9999";
             this.msktextData.Name = "msktextData";
@@ -192,30 +193,6 @@
             this.txtboxgenero.Size = new System.Drawing.Size(112, 21);
             this.txtboxgenero.TabIndex = 168;
             // 
-            // txtboxTelefoneCli
-            // 
-            this.txtboxTelefoneCli.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtboxTelefoneCli.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtboxTelefoneCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxTelefoneCli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtboxTelefoneCli.Location = new System.Drawing.Point(13, 209);
-            this.txtboxTelefoneCli.Name = "txtboxTelefoneCli";
-            this.txtboxTelefoneCli.ReadOnly = true;
-            this.txtboxTelefoneCli.Size = new System.Drawing.Size(160, 21);
-            this.txtboxTelefoneCli.TabIndex = 167;
-            // 
-            // txtBoxCPFcliente
-            // 
-            this.txtBoxCPFcliente.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtBoxCPFcliente.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtBoxCPFcliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxCPFcliente.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtBoxCPFcliente.Location = new System.Drawing.Point(261, 162);
-            this.txtBoxCPFcliente.Name = "txtBoxCPFcliente";
-            this.txtBoxCPFcliente.ReadOnly = true;
-            this.txtBoxCPFcliente.Size = new System.Drawing.Size(142, 21);
-            this.txtBoxCPFcliente.TabIndex = 169;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -260,9 +237,9 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label13.Location = new System.Drawing.Point(12, 190);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(61, 16);
+            this.label13.Size = new System.Drawing.Size(158, 16);
             this.label13.TabIndex = 139;
-            this.label13.Text = "Telefone";
+            this.label13.Text = "Telefone do responsável";
             // 
             // label15
             // 
@@ -414,6 +391,26 @@
             this.rdbMatricula.Text = "Matricula do aluno";
             this.rdbMatricula.UseVisualStyleBackColor = true;
             // 
+            // txtboxTelefoneCli
+            // 
+            this.txtboxTelefoneCli.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtboxTelefoneCli.Location = new System.Drawing.Point(13, 209);
+            this.txtboxTelefoneCli.Mask = "(00) 99999-9999";
+            this.txtboxTelefoneCli.Name = "txtboxTelefoneCli";
+            this.txtboxTelefoneCli.ReadOnly = true;
+            this.txtboxTelefoneCli.Size = new System.Drawing.Size(149, 20);
+            this.txtboxTelefoneCli.TabIndex = 178;
+            // 
+            // txtBoxCPFcliente
+            // 
+            this.txtBoxCPFcliente.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtBoxCPFcliente.Location = new System.Drawing.Point(261, 163);
+            this.txtBoxCPFcliente.Mask = "000.000.000-00";
+            this.txtBoxCPFcliente.Name = "txtBoxCPFcliente";
+            this.txtBoxCPFcliente.ReadOnly = true;
+            this.txtBoxCPFcliente.Size = new System.Drawing.Size(142, 20);
+            this.txtBoxCPFcliente.TabIndex = 179;
+            // 
             // Frm_BuscarAluno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,9 +451,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBoxCPF;
-        private System.Windows.Forms.TextBox txtBoxCPFcliente;
         private System.Windows.Forms.TextBox txtboxgenero;
-        private System.Windows.Forms.TextBox txtboxTelefoneCli;
         private System.Windows.Forms.Button btnPesquisar;
         private System.Windows.Forms.TextBox txtboxPesquisa;
         private System.Windows.Forms.Label label2;
@@ -472,5 +467,7 @@
         private System.Windows.Forms.RadioButton rdbCpfAluno;
         private System.Windows.Forms.RadioButton rdbCodigoCli;
         private System.Windows.Forms.RadioButton rdbMatricula;
+        private System.Windows.Forms.MaskedTextBox txtboxTelefoneCli;
+        private System.Windows.Forms.MaskedTextBox txtBoxCPFcliente;
     }
 }

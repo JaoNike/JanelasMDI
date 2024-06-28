@@ -23,7 +23,6 @@ namespace JanelasMDI
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
            verificar();
-
         }
         private void verificar()
         {
@@ -49,25 +48,23 @@ namespace JanelasMDI
             }
             else
             {
-                MessageBox.Show("Escolha uma das opções de busca!!!");
+                MessageBox.Show("Escolha uma das opções de busca!!!","Atenção",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
                 txtboxPesquisa.Clear();
             }
 
         }
         private void pesquisarAluno()
         {
-         
             try
             {
                 conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
                 
                 comando = new MySqlCommand(strSQL, conexao);
                 
-                comando.Parameters.AddWithValue("@valor", txtboxPesquisa.Text);
-
-                
+                comando.Parameters.AddWithValue("@valor", txtboxPesquisa.Text); 
 
                 conexao.Open();
+
                 dr = comando.ExecuteReader();
 
                 if (dr.HasRows)
@@ -90,22 +87,35 @@ namespace JanelasMDI
                         numero = Convert.ToString(dr["numerocel_cli"]);
                         txtboxTelefoneCli.Text = DDD + numero;
                     }
-                    MessageBox.Show("Encontrado");
+
+                    MessageBox.Show("Encontrado","Sucesso",MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Não encontrado");
+                    MessageBox.Show("Não encontrado","Atenção",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    limpar();
                 }             
 
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro" + ex.Message);
+                MessageBox.Show("Erro:" + ex.Message);
             }
             finally
             {
                 conexao.Close();
             }
+        }
+        private void limpar()
+        {
+            txtBoxCPF.Clear();
+            txtboxgenero.Clear();
+            txtboxEmail.Clear();
+            txtboxTelefoneCli.Clear();
+            txtBoxMatricula.Clear();
+            txtBoxNomeDoCli.Clear();
+            txtboxPesquisa.Clear();
+            txtBoxCPFcliente.Clear(); 
         }
     }
 }

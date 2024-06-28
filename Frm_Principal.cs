@@ -22,7 +22,7 @@ namespace JanelasMDI
             }
             else if (tipo == "Coordenador")
             {
-                CadastrarUsuarioToolStripMenuItem.Visible = true;
+                ferramentasMenuItem.Visible = false;
             }
             else if (tipo == "Atendimento")
             {
@@ -32,7 +32,7 @@ namespace JanelasMDI
             }
             else
             {
-                MessageBox.Show("Erro 444","Erro Grave",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+                MessageBox.Show("Erro 28999343182","Erro Grave",MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
              
             }
         }

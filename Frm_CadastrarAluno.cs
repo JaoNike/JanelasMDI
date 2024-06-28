@@ -50,7 +50,7 @@ namespace JanelasMDI
             {
 
                 conexao = new MySqlConnection("Server = localhost; Database = escola; Uid = senai; Pwd = 1234");
-                strSQL = "INSERT INTO t_aluno (nome_aluno,dddcel_aluno,numerocel_aluno,email_aluno,dtnascimento_aluno,cpf_aluno,cpf_cli,codigo_cliente) VALUES (@nome,@ddd, @numeroCel, @email, @dtnascimento, @cpfAluno, @fk_cpfCliente,@fk_codigo_cliente)";
+                strSQL = "INSERT INTO t_aluno (nome_aluno,dddcel_aluno,numerocel_aluno,email_aluno,dtnascimento_aluno,cpf_aluno,cpf_cli,codigo_cliente,sexo_aluno) VALUES (@nome,@ddd, @numeroCel, @email, @dtnascimento, @cpfAluno, @fk_cpfCliente,@fk_codigo_cliente,@genero)";
 
                 comando = new MySqlCommand(strSQL, conexao);
 
@@ -62,10 +62,13 @@ namespace JanelasMDI
                 comando.Parameters.AddWithValue("@cpfAluno", RemoveMask(mskBoxCpfAluno.Text));
                 comando.Parameters.AddWithValue("@fk_cpfCliente", RemoveMask(mskBoxCpfCliente.Text));
                 comando.Parameters.AddWithValue("@fk_codigo_cliente", txtboxCodigo.Text);
+                comando.Parameters.AddWithValue("@genero", cmboxgenero.Text);
 
                 conexao.Open();
 
                 comando.ExecuteNonQuery();
+
+                MessageBox.Show("Cadastro salva!", "Confirmação de cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 limpar();
                

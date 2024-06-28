@@ -56,5 +56,10 @@ namespace JanelasMDI
         {
             System.Diagnostics.Process.Start("https://wa.me/5528999343182");
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
