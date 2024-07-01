@@ -36,19 +36,21 @@
             this.txtBoxNomeUsuario = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.cmboxCargo = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.ttp2 = new System.Windows.Forms.ToolTip(this.components);
             this.txtSenha2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ckbExibir = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(189, 84);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(79, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 13);
             this.label2.TabIndex = 1;
@@ -57,7 +59,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(189, 129);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(79, 198);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 2;
@@ -66,7 +69,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(188, 242);
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(78, 311);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 3;
@@ -74,75 +78,63 @@
             // 
             // txtBoxNomeUsuario
             // 
-            this.txtBoxNomeUsuario.Location = new System.Drawing.Point(192, 100);
+            this.txtBoxNomeUsuario.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtBoxNomeUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxNomeUsuario.Location = new System.Drawing.Point(82, 169);
             this.txtBoxNomeUsuario.Name = "txtBoxNomeUsuario";
-            this.txtBoxNomeUsuario.Size = new System.Drawing.Size(251, 20);
+            this.txtBoxNomeUsuario.Size = new System.Drawing.Size(251, 22);
             this.txtBoxNomeUsuario.TabIndex = 5;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(192, 145);
+            this.txtSenha.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha.Location = new System.Drawing.Point(82, 214);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(251, 20);
+            this.txtSenha.Size = new System.Drawing.Size(251, 22);
             this.txtSenha.TabIndex = 6;
             // 
             // cmboxCargo
             // 
+            this.cmboxCargo.BackColor = System.Drawing.Color.Gainsboro;
+            this.cmboxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmboxCargo.FormattingEnabled = true;
             this.cmboxCargo.Items.AddRange(new object[] {
             "Coordenador",
             "Atendimento"});
-            this.cmboxCargo.Location = new System.Drawing.Point(191, 258);
+            this.cmboxCargo.Location = new System.Drawing.Point(81, 327);
             this.cmboxCargo.Name = "cmboxCargo";
-            this.cmboxCargo.Size = new System.Drawing.Size(185, 21);
+            this.cmboxCargo.Size = new System.Drawing.Size(185, 24);
             this.cmboxCargo.TabIndex = 7;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Turquoise;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(151, 374);
-            this.panel1.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(210, 22);
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(89, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(234, 33);
             this.label5.TabIndex = 0;
             this.label5.Text = "Cadastro de Usuario";
             // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCadastrar.BackgroundImage")));
-            this.btnCadastrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Location = new System.Drawing.Point(310, 302);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(49, 46);
-            this.btnCadastrar.TabIndex = 38;
-            this.ttp2.SetToolTip(this.btnCadastrar, "Salvar um novo Cadastro");
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
             // txtSenha2
             // 
-            this.txtSenha2.Location = new System.Drawing.Point(192, 192);
+            this.txtSenha2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtSenha2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSenha2.Location = new System.Drawing.Point(82, 261);
             this.txtSenha2.Name = "txtSenha2";
             this.txtSenha2.PasswordChar = '*';
-            this.txtSenha2.Size = new System.Drawing.Size(251, 20);
+            this.txtSenha2.Size = new System.Drawing.Size(251, 22);
             this.txtSenha2.TabIndex = 40;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(189, 176);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(79, 245);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 41;
@@ -151,7 +143,8 @@
             // ckbExibir
             // 
             this.ckbExibir.AutoSize = true;
-            this.ckbExibir.Location = new System.Drawing.Point(191, 218);
+            this.ckbExibir.ForeColor = System.Drawing.Color.Black;
+            this.ckbExibir.Location = new System.Drawing.Point(81, 291);
             this.ckbExibir.Name = "ckbExibir";
             this.ckbExibir.Size = new System.Drawing.Size(85, 17);
             this.ckbExibir.TabIndex = 42;
@@ -159,26 +152,54 @@
             this.ckbExibir.UseVisualStyleBackColor = true;
             this.ckbExibir.CheckedChanged += new System.EventHandler(this.ckbExibir_CheckedChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::JanelasMDI.Properties.Resources.Login;
+            this.pictureBox1.Location = new System.Drawing.Point(146, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 43;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(146, 376);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 26);
+            this.button1.TabIndex = 44;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // frm_CadastoUsuarioDoSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(513, 374);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(404, 431);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.ckbExibir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.cmboxCargo);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtBoxNomeUsuario);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(420, 470);
+            this.MinimumSize = new System.Drawing.Size(420, 470);
             this.Name = "frm_CadastoUsuarioDoSistema";
-            this.Text = "frm_CadastoUsuarioDoSistema";
+            this.Text = "Cadasto Usuario Do Sistema";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,12 +212,12 @@
         private System.Windows.Forms.TextBox txtBoxNomeUsuario;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.ComboBox cmboxCargo;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.ToolTip ttp2;
         private System.Windows.Forms.TextBox txtSenha2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox ckbExibir;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
