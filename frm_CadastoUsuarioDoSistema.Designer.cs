@@ -41,9 +41,6 @@
             this.txtSenha2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ckbExibir = new System.Windows.Forms.CheckBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnCadastrar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -152,39 +149,12 @@
             this.ckbExibir.UseVisualStyleBackColor = true;
             this.ckbExibir.CheckedChanged += new System.EventHandler(this.ckbExibir_CheckedChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::JanelasMDI.Properties.Resources.Login;
-            this.pictureBox1.Location = new System.Drawing.Point(146, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnCadastrar.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.btnCadastrar.Location = new System.Drawing.Point(146, 376);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(120, 26);
-            this.btnCadastrar.TabIndex = 44;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = false;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
             // frm_CadastoUsuarioDoSistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(404, 431);
-            this.Controls.Add(this.btnCadastrar);
-            this.Controls.Add(this.pictureBox1);
+            this.BackColor = System.Drawing.Color.Snow;
+            this.ClientSize = new System.Drawing.Size(513, 374);
             this.Controls.Add(this.ckbExibir);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha2);
@@ -200,7 +170,6 @@
             this.MinimumSize = new System.Drawing.Size(420, 470);
             this.Name = "frm_CadastoUsuarioDoSistema";
             this.Text = "Cadasto Usuario Do Sistema";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,7 +187,5 @@
         private System.Windows.Forms.TextBox txtSenha2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox ckbExibir;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnCadastrar;
     }
 }
