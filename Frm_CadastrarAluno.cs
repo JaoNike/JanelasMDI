@@ -69,8 +69,9 @@ namespace JanelasMDI
 //4 - listar alunos V
 //5 - Tradamento de dados V
 //6 - Ajuda V
-//7 - Adicionar Icons na barra de ferramentas tt
-//8 - Melhora o desiner se possivel x
+//7 - Adicionar Icons na barra de ferramentas V
+//8 - Melhora o desiner se possivel tt
+//9 - Em cada listar colocar o cadastra (idea boa) - X
             else
             {
                 try

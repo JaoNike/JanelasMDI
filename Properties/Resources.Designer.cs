@@ -63,6 +63,66 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Alunos {
+            get {
+                object obj = ResourceManager.GetObject("Alunos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alunos__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Alunos (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alunos__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Alunos (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alunos__2__transformed {
+            get {
+                object obj = ResourceManager.GetObject("Alunos_(2)-transformed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alunos__2__transformed1 {
+            get {
+                object obj = ResourceManager.GetObject("Alunos_(2)-transformed1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Alunos__3_ {
+            get {
+                object obj = ResourceManager.GetObject("Alunos (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Foto_joao {
             get {
                 object obj = ResourceManager.GetObject("Foto_joao", resourceCulture);
@@ -283,6 +343,36 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap list_54631 {
+            get {
+                object obj = ResourceManager.GetObject("list_54631", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap list_546311 {
+            get {
+                object obj = ResourceManager.GetObject("list_546311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login {
+            get {
+                object obj = ResourceManager.GetObject("Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap me_Sobre {
             get {
                 object obj = ResourceManager.GetObject("me_Sobre", resourceCulture);
@@ -336,6 +426,26 @@ namespace JanelasMDI.Properties {
         internal static System.Drawing.Bitmap Retangulo1 {
             get {
                 object obj = ResourceManager.GetObject("Retangulo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sair {
+            get {
+                object obj = ResourceManager.GetObject("Sair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Sair1 {
+            get {
+                object obj = ResourceManager.GetObject("Sair1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

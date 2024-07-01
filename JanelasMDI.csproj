@@ -319,5 +319,38 @@
   <ItemGroup>
     <None Include="Resources\membro.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos_%282%29-transformed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_54631.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos_%282%29-transformed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alunos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list_546311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sair1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -145,19 +145,20 @@ namespace JanelasMDI
             _BuscarAluno.Show();
         }
 
-        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        private void TsbCadastrarCliente_Click(object sender, EventArgs e)
         {
             Frm_CadastrarCliente FrmCadastrar_Cliente = new Frm_CadastrarCliente();
             FrmCadastrar_Cliente.MdiParent = this;
             FrmCadastrar_Cliente.Show();
         }
-        private void tsbSobre_Click(object sender, EventArgs e)
+        private void tsbAjuda_Click(object sender, EventArgs e)
         {
-            Frm_Sobre frmSobre = new Frm_Sobre();            
-            frmSobre.Show();
+            Frm_Ajuda _Ajuda = new Frm_Ajuda();
+            _Ajuda.MdiParent = this;
+            _Ajuda.Show();
         }
 
-        private void tsbCadastrarAluno_Click(object sender, EventArgs e)
+        private void TsbCadastrarAluno_Click(object sender, EventArgs e)
         {
             Frm_CadastrarAluno Frm_CadAnimal = new Frm_CadastrarAluno();
             Frm_CadAnimal.MdiParent = this;
@@ -171,7 +172,7 @@ namespace JanelasMDI
             frm.Show();
         }
 
-        private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
+        private void TsbListar_Click(object sender, EventArgs e)
         {
             Frm_Listar visualizar = new Frm_Listar("usu");
             visualizar.MdiParent = this;
@@ -180,32 +181,83 @@ namespace JanelasMDI
 
         private void ferramentasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DeixarLetrasPreta();
 
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+            DeixarLetrasPreta();
 
         }
 
         private void exibirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (toolStrip1.Visible == false)
+            DeixarLetrasPreta();
+            if (tsbarradeferramentes.Visible == false)
             {
-                toolStrip1.Visible = true;
+                tsbarradeferramentes.Visible = true;
             }
             else
             {
-                toolStrip1.Visible=false;
+                tsbarradeferramentes.Visible=false;
             }
 
         }
 
-        private void toolbuscarCliente_Click(object sender, EventArgs e)
+        private void TsbBuscarAluno_CLick(object sender, EventArgs e)
         {
-            Frm_BuscarClientel frm_BuscarAnimal = new Frm_BuscarClientel();
-            frm_BuscarAnimal.MdiParent = this;
-            frm_BuscarAnimal.Show();
+            
+            Frm_BuscarAluno _BuscarAluno = new Frm_BuscarAluno();
+            _BuscarAluno.MdiParent = this;
+            _BuscarAluno.Show();
+        }
+
+        private void TsbBuscarCliente_Click(object sender, EventArgs e)
+        {
+            Frm_BuscarClientel frm_BuscarCliente = new Frm_BuscarClientel();
+            frm_BuscarCliente.MdiParent = this;
+            frm_BuscarCliente.Show();
+        }
+
+        private void arquivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+        private void DeixarLetrasPreta()
+        {
+            
+        }
+
+        private void sistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void janelaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void ajudaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void tsbListarClientes_Click(object sender, EventArgs e)
+        {
+            Frm_Listar listar = new Frm_Listar("cli");
+            listar.MdiParent = this;
+            listar.Show();
+        }
+
+        private void tsbListarAlunos_Click(object sender, EventArgs e)
+        {
+            Frm_Listar listar = new Frm_Listar("alu");
+            listar.MdiParent = this;
+            listar.Show();
         }
     }
 }
