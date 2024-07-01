@@ -72,7 +72,7 @@ namespace JanelasMDI
            
         }
 
-        private void btnCadastrar_Click(object sender, EventArgs e)
+        private void BtnCadastrar_Click(object sender, EventArgs e)
         {
             CripDados();
         }
@@ -89,6 +89,11 @@ namespace JanelasMDI
                 txtSenha.PasswordChar = '*';
                 txtSenha2.PasswordChar = '*';
             }
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
