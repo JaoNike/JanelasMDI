@@ -9,8 +9,7 @@ namespace JanelasMDI
         MySqlConnection conexao;
         MySqlCommand comando;
         string strSQL;
-        MySqlDataReader dr;
-        Boolean flag = true;
+        MySqlDataReader dr;s
         public Frm_BuscarAluno()
         {
             InitializeComponent();

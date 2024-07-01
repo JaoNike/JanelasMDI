@@ -236,9 +236,6 @@
     <None Include="Resources\Retangulo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Retangulo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\fundo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -248,19 +245,7 @@
     <None Include="Resources\icons8-pesquisar-50.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Teste.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Teste1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Fundodois.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Fundoman.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FundoPesquisaAluno.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-pesquisar-501.png" />
@@ -269,16 +254,10 @@
     <None Include="Resources\icons8-pesquisar-502.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icons8-vassoura-401.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\icons8-adicionar-usuário-masculino-40.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-busca-67.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\FundoDocliente.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\FundoBrancoEpreto.png" />
@@ -297,9 +276,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Foto_joao.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\me_Sobre.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\me_Sobre1.png" />
@@ -345,12 +321,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Alunos.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\list_546311.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sair1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
