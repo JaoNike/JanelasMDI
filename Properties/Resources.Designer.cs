@@ -123,6 +123,16 @@ namespace JanelasMDI.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FecharTudo {
+            get {
+                object obj = ResourceManager.GetObject("FecharTudo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Foto_joao {
             get {
                 object obj = ResourceManager.GetObject("Foto_joao", resourceCulture);
