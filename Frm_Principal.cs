@@ -259,5 +259,10 @@ namespace JanelasMDI
             listar.MdiParent = this;
             listar.Show();
         }
+
+        private void tsbFecharPrograma_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

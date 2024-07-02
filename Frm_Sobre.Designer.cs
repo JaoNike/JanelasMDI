@@ -167,7 +167,7 @@
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.linkLabel1.Location = new System.Drawing.Point(678, 317);
+            this.linkLabel1.Location = new System.Drawing.Point(598, 293);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(181, 24);
             this.linkLabel1.TabIndex = 5;
@@ -221,9 +221,9 @@
             this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label12.Location = new System.Drawing.Point(461, 558);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(574, 147);
+            this.label12.Size = new System.Drawing.Size(15, 21);
             this.label12.TabIndex = 12;
-            this.label12.Text = resources.GetString("label12.Text");
+            this.label12.Text = " ";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // button1
@@ -258,9 +258,9 @@
             // 
             this.panel1.BackgroundImage = global::JanelasMDI.Properties.Resources.IDPhoto_20240225_210338_2;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(44, 12);
+            this.panel1.Location = new System.Drawing.Point(39, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 199);
+            this.panel1.Size = new System.Drawing.Size(199, 199);
             this.panel1.TabIndex = 15;
             // 
             // Frm_Sobre

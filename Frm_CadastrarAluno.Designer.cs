@@ -65,7 +65,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(143, 21);
+            this.label2.Location = new System.Drawing.Point(148, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(413, 57);
             this.label2.TabIndex = 39;
@@ -126,7 +126,7 @@
             this.panel1.Controls.Add(this.txtBoxNome);
             this.panel1.Controls.Add(this.label9);
             this.panel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(42, 113);
+            this.panel1.Location = new System.Drawing.Point(46, 93);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(615, 322);
             this.panel1.TabIndex = 40;
@@ -371,7 +371,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.panel4.Location = new System.Drawing.Point(577, 40);
+            this.panel4.Location = new System.Drawing.Point(579, 40);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(122, 10);
             this.panel4.TabIndex = 42;
@@ -382,7 +382,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkTurquoise;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(701, 462);
+            this.ClientSize = new System.Drawing.Size(701, 438);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label2);

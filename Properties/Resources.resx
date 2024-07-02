@@ -136,6 +136,9 @@
   <data name="Githublink" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Githublink.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Alunos (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alunos (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-adicionar-usuário-masculino-96" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-adicionar-usuário-masculino-96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,12 @@
   <data name="list_54631" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\list_54631.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alunos (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alunos (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-vassoura-401" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-vassoura-401.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -168,6 +177,9 @@
   </data>
   <data name="membro" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\membro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alunos_(2)-transformed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alunos_(2)-transformed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Alunos_(2)-transformed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Alunos_(2)-transformed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,6 +196,9 @@
   <data name="fundo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fundo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Alunos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alunos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FundoBrancoEpreto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FundoBrancoEpreto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -193,6 +208,9 @@
   <data name="FundoPesquisaAluno" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FundoPesquisaAluno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Sair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-busca-67" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-busca-67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -201,6 +219,12 @@
   </data>
   <data name="icons8-pesquisar-502" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-pesquisar-502.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="list_546311" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\list_546311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Alunos (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Alunos (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Free-Dark-Wallpaper-HD-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Free-Dark-Wallpaper-HD-Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,28 +244,7 @@
   <data name="Retangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Retangulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alunos_(2)-transformed1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alunos_(2)-transformed1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alunos (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alunos (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alunos (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alunos (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alunos (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alunos (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Alunos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Alunos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="list_546311" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\list_546311.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sair1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sair1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FecharTudo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FecharTudo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

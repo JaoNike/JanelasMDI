@@ -119,5 +119,20 @@ namespace JanelasMDI
         {
 
         }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPesquisar2_Click(object sender, EventArgs e)
+        {
+            pesquisar();
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            limpar();
+        }
     }
 }

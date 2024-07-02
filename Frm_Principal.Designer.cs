@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -63,14 +64,18 @@
             this.tsbarradeferramentes = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tsbCadastroDeClient = new System.Windows.Forms.ToolStripButton();
             this.tsbCadastrarAluno = new System.Windows.Forms.ToolStripButton();
-            this.tsbFecharTodasJanelas = new System.Windows.Forms.ToolStripButton();
             this.tsbAjuda = new System.Windows.Forms.ToolStripButton();
             this.tsbtnBuscarAluno = new System.Windows.Forms.ToolStripButton();
             this.toolbuscarCliente = new System.Windows.Forms.ToolStripButton();
             this.tsbListarClientes = new System.Windows.Forms.ToolStripButton();
             this.tsbListarAlunos = new System.Windows.Forms.ToolStripButton();
+            this.tsbFecharTodasJanelas = new System.Windows.Forms.ToolStripButton();
+            this.tsbFecharPrograma = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator10 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator9 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.tsbarradeferramentes.SuspendLayout();
             this.SuspendLayout();
@@ -349,14 +354,17 @@
             this.tsbarradeferramentes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbCadastroDeClient,
             this.tsbCadastrarAluno,
-            this.tsbFecharTodasJanelas,
+            this.tsbFecharPrograma,
+            this.toolStripSeparator9,
             this.tsbAjuda,
             this.toolStripSeparator7,
             this.tsbtnBuscarAluno,
             this.toolbuscarCliente,
             this.toolStripSeparator8,
             this.tsbListarClientes,
-            this.tsbListarAlunos});
+            this.tsbListarAlunos,
+            this.toolStripSeparator10,
+            this.tsbFecharTodasJanelas});
             this.tsbarradeferramentes.Location = new System.Drawing.Point(1, 25);
             this.tsbarradeferramentes.Name = "tsbarradeferramentes";
             this.tsbarradeferramentes.Padding = new System.Windows.Forms.Padding(0);
@@ -397,16 +405,6 @@
             this.tsbCadastrarAluno.Text = "Cadastrar Alunos";
             this.tsbCadastrarAluno.Click += new System.EventHandler(this.TsbCadastrarAluno_Click);
             // 
-            // tsbFecharTodasJanelas
-            // 
-            this.tsbFecharTodasJanelas.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.tsbFecharTodasJanelas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.tsbFecharTodasJanelas.Image = global::JanelasMDI.Properties.Resources.Sair;
-            this.tsbFecharTodasJanelas.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.tsbFecharTodasJanelas.Name = "tsbFecharTodasJanelas";
-            this.tsbFecharTodasJanelas.Size = new System.Drawing.Size(23, 22);
-            this.tsbFecharTodasJanelas.Text = "Fechar todas janelas ";
-            // 
             // tsbAjuda
             // 
             this.tsbAjuda.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
@@ -437,7 +435,7 @@
             this.toolbuscarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolbuscarCliente.Name = "toolbuscarCliente";
             this.toolbuscarCliente.Size = new System.Drawing.Size(23, 22);
-            this.toolbuscarCliente.Text = "toolStripButton1";
+            this.toolbuscarCliente.Text = "Buscar Clientes";
             this.toolbuscarCliente.Click += new System.EventHandler(this.TsbBuscarAluno_CLick);
             // 
             // tsbListarClientes
@@ -459,6 +457,37 @@
             this.tsbListarAlunos.Size = new System.Drawing.Size(23, 22);
             this.tsbListarAlunos.Text = "Listar Alunos";
             this.tsbListarAlunos.Click += new System.EventHandler(this.tsbListarAlunos_Click);
+            // 
+            // tsbFecharTodasJanelas
+            // 
+            this.tsbFecharTodasJanelas.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbFecharTodasJanelas.Image = global::JanelasMDI.Properties.Resources.Sair;
+            this.tsbFecharTodasJanelas.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbFecharTodasJanelas.Name = "tsbFecharTodasJanelas";
+            this.tsbFecharTodasJanelas.Size = new System.Drawing.Size(23, 22);
+            this.tsbFecharTodasJanelas.Text = "Fechar todas janelas ";
+            // 
+            // tsbFecharPrograma
+            // 
+            this.tsbFecharPrograma.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.tsbFecharPrograma.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbFecharPrograma.Image = global::JanelasMDI.Properties.Resources.FecharTudo;
+            this.tsbFecharPrograma.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbFecharPrograma.Name = "tsbFecharPrograma";
+            this.tsbFecharPrograma.Size = new System.Drawing.Size(23, 22);
+            this.tsbFecharPrograma.Text = "Fechar Programa";
+            this.tsbFecharPrograma.Click += new System.EventHandler(this.tsbFecharPrograma_Click);
+            // 
+            // toolStripSeparator10
+            // 
+            this.toolStripSeparator10.Name = "toolStripSeparator10";
+            this.toolStripSeparator10.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator9
+            // 
+            this.toolStripSeparator9.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripSeparator9.Name = "toolStripSeparator9";
+            this.toolStripSeparator9.Size = new System.Drawing.Size(6, 25);
             // 
             // Frm_Principal
             // 
@@ -529,6 +558,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
         private System.Windows.Forms.ToolStripButton tsbListarClientes;
         private System.Windows.Forms.ToolStripButton tsbListarAlunos;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.ToolStripButton tsbFecharPrograma;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator10;
     }
 }
 
