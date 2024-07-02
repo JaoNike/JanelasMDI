@@ -95,5 +95,10 @@ namespace JanelasMDI
         {
 
         }
+
+        private void frm_CadastoUsuarioDoSistema_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

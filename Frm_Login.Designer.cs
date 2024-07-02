@@ -45,7 +45,7 @@
             this.ckbExibir.AutoSize = true;
             this.ckbExibir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbExibir.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ckbExibir.Location = new System.Drawing.Point(189, 275);
+            this.ckbExibir.Location = new System.Drawing.Point(189, 270);
             this.ckbExibir.Name = "ckbExibir";
             this.ckbExibir.Size = new System.Drawing.Size(101, 20);
             this.ckbExibir.TabIndex = 0;
@@ -59,11 +59,11 @@
             this.btn__Entrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn__Entrar.FlatAppearance.BorderSize = 0;
             this.btn__Entrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn__Entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn__Entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn__Entrar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn__Entrar.Location = new System.Drawing.Point(189, 224);
+            this.btn__Entrar.Location = new System.Drawing.Point(189, 221);
             this.btn__Entrar.Name = "btn__Entrar";
-            this.btn__Entrar.Size = new System.Drawing.Size(227, 32);
+            this.btn__Entrar.Size = new System.Drawing.Size(227, 25);
             this.btn__Entrar.TabIndex = 1;
             this.btn__Entrar.Text = "Entrar";
             this.btn__Entrar.UseVisualStyleBackColor = false;
@@ -104,7 +104,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label2.Location = new System.Drawing.Point(189, 166);
+            this.label2.Location = new System.Drawing.Point(189, 163);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 16);
             this.label2.TabIndex = 5;
@@ -114,7 +114,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox1.Image = global::JanelasMDI.Properties.Resources.Login;
-            this.pictureBox1.Location = new System.Drawing.Point(245, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(239, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(122, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
